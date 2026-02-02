@@ -1,0 +1,33 @@
+{
+  "mode": "paper",
+  "exchange": "binance",
+  "symbols": ["BTC/USDT", "XRP/USDT"],
+  "timeframe": "1m",
+  "loop_seconds": 15,
+
+  "max_trades_per_day": 20,
+  "cooldown_seconds_after_trade": 60,
+  "max_consecutive_losses": 2,
+
+  "risk": {
+    "paper_start_balance_usdt": 500,
+    "risk_per_trade_pct": 0.5,
+    "max_daily_loss_pct": 1.0,
+    "daily_take_profit_pct": 1.0
+  },
+
+  "strategy": {
+    "type": "mean_reversion_vwap_rsi",
+    "rsi_period": 14,
+    "vwap_window": 20,
+    "min_vwap_deviation_pct": 0.15,
+
+    "tp_pct_btc": 0.20,
+    "sl_pct_btc": 0.12,
+    "max_hold_seconds_btc": 120,
+
+    "tp_pct_xrp": 0.35,
+    "sl_pct_xrp": 0.20,
+    "max_hold_seconds_xrp": 90
+  }
+}
