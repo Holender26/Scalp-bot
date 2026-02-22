@@ -1,4 +1,13 @@
 {
+  "secret": "TWOJ_SEKRET",
+  "symbol": "BTCUSDT",
+  "side": "BUY",
+  "entry": 51000,
+  "sl": 50300,
+  "tp": [52000, 53000],
+  "time": "{{timenow}}",
+  "strategy": "EMA_RSI_v1"
+}{
   "mode": "paper",
   "exchange": "binance",
   "symbols": ["BTC/USDT", "XRP/USDT"],
